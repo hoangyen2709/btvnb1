@@ -1,0 +1,9 @@
+git init = creates a new Git repository  
+git add <file_name> = add specific file from Working directory to Staging area
+git add . = add all files from Working directory to Staging area
+git commit -m"message" = commit files from Staging area to Repository
+
+answer for question 2
+working directory: file2, file3
+staging area: none
+repository: file 1
