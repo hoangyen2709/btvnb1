@@ -35,10 +35,31 @@ function decryptCode(code) {
     for (let char of code) {
         if (char >= 'a' && char <= 'z') {
             decrypted += char.toUpperCase();
-        } else if (char >= 'A' && char <= 'Z') {
+            continue
+        }
+        if (char >= 'A' && char <= 'Z') {
             decrypted += char.toLowerCase();
-        } else {
-            decrypted += char;
+            continue
+        }
+        decrypted += char;
+    }
+    return decrypted;
+}
+
+// cach2
+function decryptCode(code) {
+    let decrypted = '';
+    for (let char of code) {
+        switch (true) {
+            case (char >= 'a' && char <= 'z'):
+                decrypted += char.toUpperCase();
+                break;
+            case (char >= 'A' && char <= 'Z'):
+                decrypted += char.toLowerCase();
+                break;
+            default:
+                decrypted += char;
+                break;
         }
     }
     return decrypted;
