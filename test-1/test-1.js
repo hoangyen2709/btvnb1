@@ -7,8 +7,6 @@ function launchShip(crew) {
     return message;
 }
 
-const { log } = require("console");
-
 console.log(launchShip(crew));
 
 function calculateDistance(speed, time) {
@@ -56,4 +54,5 @@ function returnToEarth() {
     console.log("Chuẩn bị trở về Trái Đất!");
     return;
 }
+
 returnToEarth()
