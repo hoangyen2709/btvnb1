@@ -1,0 +1,15 @@
+git commit --amend: Thay đổi commit message (i -> edit ->esc -> :wq)
+git commit --amend -m”<message>”: Thay đổi commit message
+git restore --staged <file>: Đưa file từ vùng staging về working directory
+git reset HEAD~1: Đưa từ vùng staging về working directory
+
+
+2. ANSWER 
+working directory: file2, file3
+staging area: none
+repository: file 1 "add file"
+
+3. ANSWER 
+working directory: 
+staging area: none
+repository: file2.txt

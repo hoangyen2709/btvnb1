@@ -1,4 +1,4 @@
-const num = 0
+const num = 12
 if (num>12){
     console.log("Giá trị bạn nhập là số dương")
 } else if (num<0){
