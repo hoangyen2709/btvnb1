@@ -46,6 +46,7 @@ function decryptCode(code) {
     }
     return decrypted;
 }
+
 // cach 2
 function decryptCode(code) {
     let decrypted = '';
@@ -80,6 +81,21 @@ function decryptCode(code) {
                 break;
         }
     }
+    return decrypted;
+}
+
+//cach 4
+function decryptCode(code) {
+    let decrypted = '';
+    code.split('').forEach(char => {
+        if (char >= 'a' && char <= 'z') {
+            decrypted += char.toUpperCase();
+        } else if (char >= 'A' && char <= 'Z') {
+            decrypted += char.toLowerCase();
+        } else {
+            decrypted += char;
+        }
+    });
     return decrypted;
 }
 
