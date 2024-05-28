@@ -30,6 +30,7 @@ let hexTime = convertTimeToHex(timeInSeconds);
 
 console.log(`Thời gian ${timeInSeconds} giây trong hệ thập lục phân là: ${hexTime}`);
 
+//cach 1
 function decryptCode(code) {
     let decrypted = '';
     for (let char of code) {
@@ -45,8 +46,25 @@ function decryptCode(code) {
     }
     return decrypted;
 }
+// cach 2
+function decryptCode(code) {
+    let decrypted = '';
+    for (let i = 0; i < code.length; i++) {
+        let char = code[i];
+        if (char >= 'a' && char <= 'z') {
+            decrypted += char.toUpperCase();
+            continue;
+        }
+        if (char >= 'A' && char <= 'Z') {
+            decrypted += char.toLowerCase();
+            continue;
+        }
+        decrypted += char;
+    }
+    return decrypted;
+}
 
-// cach2
+// cach 3
 function decryptCode(code) {
     let decrypted = '';
     for (let char of code) {
