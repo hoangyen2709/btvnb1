@@ -1,5 +1,5 @@
-const departurePlanet = "Trái Đất";
-const mission = "Khám phá Vũ trụ K6";
+let departurePlanet = "Trái Đất";
+let mission = "Khám phá Vũ trụ K6";
 let crew = ["Khang", "Yến", "Ánh"];
 function launchShip(crew) {
     let crewList = crew.join(', ');
