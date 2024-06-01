@@ -1,0 +1,13 @@
+Cấu trúc DOM cơ bản của một trang web bao gồm các loại thẻ: thẻ mở, thẻ đóng, thẻ tự đóng.
+Cấu trúc của html:
+Input: <input>
+Textarea: <textarea>
+Radio: <input type="radio"
+Checkbox: <input type="checkbox"
+List and dropdown: <select…option
+Table: table, thead, tbody, tr, td
+Date picker: <input type="date"
+Slider: <input type="range"
+Tooltip: 
+Irame: <iframe
+Dialog
